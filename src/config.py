@@ -7,6 +7,8 @@ class PipelineSettings(BaseSettings):
     BASE_MODEL_ID: str = "Qwen/Qwen2.5-7B-Instruct"
     OUTPUT_DIR: str = "./lora_financial_credit_weights"
     GEMINI_API_KEY: str = os.getenv("GEMINI_API_KEY", "")
+    GEMINI_JUDGE_MODEL: str = os.getenv("GEMINI_JUDGE_MODEL", "gemini-1.5-flash")
+    USE_MOCK_JUDGE: bool = False
 
     # QLoRA Parameters
     LORA_R: int = 16

@@ -1,0 +1,34 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Environment & Secrets
+.env
+.env.local
+
+# Virtual Environments
+venv/
+env/
+ENV/
+.venv/
+
+# Model Checkpoints and Weights
+lora_financial_credit_weights/
+*.safetensors
+*.bin
+*.pt
+
+# Logs & Training outputs
+wandb/
+runs/
+*.log
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

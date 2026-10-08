@@ -20,7 +20,7 @@ def run_pipeline():
         "Impact: NEUTRAL. Revenue dropped 12% YoY, but debt decreased by $120M from cash flow."
     )
 
-    print("\n[+] Running Gemini 1.5 Pro LLM-as-a-Judge Evaluation Benchmark...")
+    print(f"\n[+] Running Gemini ({settings.GEMINI_JUDGE_MODEL}) LLM-as-a-Judge Evaluation Benchmark...")
     try:
         evaluator = LLMJudgeEvaluator()
         eval_result = evaluator.evaluate_model_output(
